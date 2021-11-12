@@ -1,0 +1,60 @@
+<script src="filmes.component.js"></script>
+<body>
+  <!-- Toolbar ANTIGA 
+  <div class="toolbar" role="banner">
+    <h2>Filmes com Angular </h2>
+    <div class="spacer"></div>
+    <a aria-label="Github" href="https://Github.com" title="Github">
+      <img src="assets\giticon.png" width="32" height="32">
+    </a>
+  </div> --> 
+
+  <!--grade total de conteudo-->
+  <div class="fatherbox">
+    <h4>TOTAL DE FILMES: {{filmeslista.length}}</h4>
+    <!--caixa da lista de filmes-->
+    <div class="titlebox"></div>
+    
+    <div class="mainbox" id="cards"><!--filmes vão aqui-->
+      
+      <div *ngFor="let filmesdata of filmeslista" class="cardbox2">
+        <div class="cardbox">
+          {{filmesdata.title}}
+          <button (click)="EditInput(filmesdata)" title="Editar filme" class="button2">
+          <img class="buttonimg2" src="assets\pen.png">
+          </button>
+          <button (click)="RemoveInput(filmesdata)"  title="Remover filme" class="button2">
+            <img class="buttonimg2" src="assets\trash.png">
+          </button>
+        </div>
+
+        <div class="idbox">
+          {{filmesdata.id}}
+        </div>
+      </div>
+
+      <div id="fim"></div>
+
+    </div>
+      
+    <!--adição-->  
+    <div class="buttonslot">
+      <button (click)="AddInput()" title="Adicionar filme" class="button">
+        <img class="buttonimg" src="assets\plus.jpg">
+      </button>
+    </div>
+  </div>
+
+  <!--caixa de edição-->
+  <div id="editbox" *ngIf="selectedTitle">
+    <h3>Titulo:</h3>
+    <textarea id="filme-title" [(ngModel)]="selectedTitle.title" class="form-control2" placeholder="Insira o titulo"></textarea>
+    <h3>Descricao:</h3>
+    <textarea id="filme-desc" [(ngModel)]="selectedTitle.desc" class="form-control2" placeholder="Insira a descricao"></textarea>
+  </div>
+
+  
+  
+</body>
+  
+<router-outlet></router-outlet>

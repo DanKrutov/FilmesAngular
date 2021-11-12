@@ -1,0 +1,181 @@
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 8px 0;
+}
+  p {
+    margin: 0;
+  }
+  .spacer {
+    flex: 1;
+  }
+
+  .spacer2{
+    width: 10px;
+    height: 10px;
+  }
+
+  .fatherbox{
+    width: 650px;
+    height: auto;
+    margin: 10px 5px 25px 5px;
+    margin-top: 100px;
+  }
+  .titlebox {
+    width: 600px;
+    height: 30px; 
+    border-radius: 10px 10px 0px 0px;
+		background-color: grey;
+    position: auto;
+		float: left;
+    color: white;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  .mainbox {
+    border-radius: 0px 0px 0px 0px;
+    border: 5px solid;
+    padding: 0px;
+    width: 600px;
+    height: 300px; 
+		background-color: white;
+    position: auto;
+		float: left;
+    box-sizing: border-box;
+    overflow: auto;
+  }
+
+  .cardbox{
+    border-radius: 0px 0px 0px 0px;
+    width: 400px;
+    height: 50px;
+    background-color: grey;
+    color: white;
+    position: auto;
+		float: left;
+    padding: 5px 10px;
+    margin: 5px;
+    animation-name: cbox;
+		animation-duration: 0.1s;
+  }
+
+  .cardbox2{
+    width: 480px;
+    height: 60px;
+  }
+
+  .idbox{
+    border-radius: 0px 10px 10px 0px;
+    width: 60px;
+    height: 50px;
+    background-color: grey;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    animation-name: cbox;
+		animation-duration: 0.1s;
+    position: auto;
+    float: right;
+  }
+
+  .buttonslot{
+    width: 600px;
+    height: 75px;
+    position: relative;
+    float: left;
+    bottom: 0px;
+  }
+
+  .button {
+  border-radius: 15px;
+  background-color: grey;
+  border: none;
+  padding: 15px 32px;
+  margin: 10px 4px;
+  display: inline-block;
+  }
+  .button2 {
+    border-radius: 7px;
+    background-color: grey;
+    border: none;
+    padding: 2.5px 7px;
+    margin: 3px 3px;
+    display: inline-block;
+    float: right;
+  }
+
+  .button:hover, .button2:hover{
+    background-color: black;
+  }
+
+  .buttonimg{
+    width: 24px;
+    height: 24px;
+  }
+  .buttonimg2{
+    width: 15px;
+    height: 15px;
+  }
+
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: grey;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .content {
+    display: flex;
+    margin: 82px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input:placeholder-shown {
+    font-style: italic;
+  }
+
+  @keyframes cbox {
+    0%{background-color: white; opacity:0;}
+    100%{background-color: grey; opacity:1;}
+  }
+
+  .form-control2 {
+    width: 400px;
+    height: 190px;
+  }
+  #filme-title {
+    height: 40px;
+  }
+
+  .editbox{
+    width: 400px;
+    height: auto;
+  }
+
+  textarea:placeholder-shown {
+    font-style: italic;
+ }
+ 
+#idd{
+  left: 90px;
+}
+ 
